@@ -1,0 +1,666 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sh Graphics | Professional Booth Design Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+        
+        body {
+            font-family: 'Montserrat', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, #1a237e 0%, #283593 50%, #3949ab 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .portfolio-item {
+            transition: all 0.3s ease;
+        }
+        
+        .portfolio-item:hover {
+            transform: scale(1.03);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: -2px;
+            left: 0;
+            background-color: #3949ab;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <div class="flex items-center">
+                        <span class="text-3xl font-bold text-indigo-900">Sh</span>
+                        <span class="text-3xl font-bold text-indigo-600">Graphics</span>
+                    </div>
+                </div>
+                <div class="hidden md:block">
+                    <div class="ml-10 flex items-baseline space-x-8">
+                        <a href="#home" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Home</a>
+                        <a href="#services" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Services</a>
+                        <a href="#portfolio" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Portfolio</a>
+                        <a href="#process" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Our Process</a>
+                        <a href="#testimonials" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Testimonials</a>
+                        <a href="#contact" class="nav-link text-gray-900 hover:text-indigo-600 px-3 py-2 text-sm font-medium">Contact</a>
+                    </div>
+                </div>
+                <div class="md:hidden">
+                    <button id="menu-toggle" class="text-gray-900 focus:outline-none">
+                        <i class="fas fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white shadow-lg">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="#home" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Home</a>
+                <a href="#services" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Services</a>
+                <a href="#portfolio" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Portfolio</a>
+                <a href="#process" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Our Process</a>
+                <a href="#testimonials" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Testimonials</a>
+                <a href="#contact" class="block px-3 py-2 text-base font-medium text-gray-900 hover:text-indigo-600">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-gradient pt-24 pb-32 text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="md:flex items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0">
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight">Transform Your Booth Into A <span class="text-indigo-200">Brand Experience</span></h1>
+                    <p class="text-xl mb-8 text-indigo-100">Professional, innovative graphics that captivate audiences and elevate your trade show presence across the USA.</p>
+                    <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                        <a href="#contact" class="bg-white text-indigo-800 hover:bg-indigo-100 px-8 py-3 rounded-lg font-semibold text-lg text-center transition duration-300">Get a Quote</a>
+                        <a href="#portfolio" class="border-2 border-white text-white hover:bg-white hover:text-indigo-800 px-8 py-3 rounded-lg font-semibold text-lg text-center transition duration-300">View Portfolio</a>
+                    </div>
+                </div>
+                <div class="md:w-1/2 flex justify-center">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Trade show booth with professional graphics" class="rounded-lg shadow-2xl max-w-full h-auto">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 text-center">
+                <div class="p-6 border-r border-gray-200">
+                    <div class="text-5xl font-bold text-indigo-800 mb-2">250+</div>
+                    <div class="text-gray-600">Trade Shows</div>
+                </div>
+                <div class="p-6 border-r border-gray-200">
+                    <div class="text-5xl font-bold text-indigo-800 mb-2">500+</div>
+                    <div class="text-gray-600">Happy Clients</div>
+                </div>
+                <div class="p-6 border-r border-gray-200">
+                    <div class="text-5xl font-bold text-indigo-800 mb-2">100%</div>
+                    <div class="text-gray-600">Custom Designs</div>
+                </div>
+                <div class="p-6">
+                    <div class="text-5xl font-bold text-indigo-800 mb-2">24/7</div>
+                    <div class="text-gray-600">Support</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our <span class="text-indigo-600">Premium</span> Services</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">We offer comprehensive graphic solutions tailored to make your booth stand out in any trade show across the USA.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-paint-brush text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Custom Booth Graphics</h3>
+                    <p class="text-gray-600 mb-4">Tailored designs that perfectly represent your brand and attract visitors to your booth.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Full-color digital printing</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> High-resolution graphics</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Durable materials</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Booth Design Consultation</h3>
+                    <p class="text-gray-600 mb-4">Expert advice on booth layout and design to maximize your trade show impact.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Space optimization</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Traffic flow analysis</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Brand consistency</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-truck text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Nationwide Installation</h3>
+                    <p class="text-gray-600 mb-4">Professional installation services available at trade show venues across the country.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> On-site support</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Quick turnaround</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Tear-down services</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-images text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Retractable Banner Stands</h3>
+                    <p class="text-gray-600 mb-4">Portable, professional displays that make setup easy and your brand visible.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Lightweight and portable</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Quick assembly</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Multiple size options</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-cube text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">3D Signage</h3>
+                    <p class="text-gray-600 mb-4">Eye-catching dimensional signs that add depth and visibility to your booth.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Illuminated options</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Custom shapes</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Premium materials</li>
+                    </ul>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-indigo-100 rounded-lg flex items-center justify-center mb-6">
+                        <i class="fas fa-sync-alt text-3xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-900 mb-3">Graphics Refresh</h3>
+                    <p class="text-gray-600 mb-4">Update your existing booth graphics with fresh designs while maintaining structural elements.</p>
+                    <ul class="space-y-2 text-gray-600">
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Cost-effective updates</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Quick turnaround</li>
+                        <li class="flex items-center"><i class="fas fa-check-circle text-indigo-500 mr-2"></i> Sustainable solutions</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our <span class="text-indigo-600">Work</span> Speaks Volumes</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Browse through our portfolio of trade show booth designs that have helped brands stand out.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="portfolio-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Tech trade show booth" class="w-full h-64 object-cover">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="font-bold text-xl mb-2 text-gray-900">TechExpo 2023</div>
+                        <p class="text-gray-600 text-base">Innovative booth design for a leading tech company at CES Las Vegas.</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 2 -->
+                <div class="portfolio-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551818255-e6e10975bc17?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1472&q=80" alt="Healthcare trade show booth" class="w-full h-64 object-cover">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="font-bold text-xl mb-2 text-gray-900">MediCon 2023</div>
+                        <p class="text-gray-600 text-base">Clean, professional design for a healthcare provider at Chicago conference.</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 3 -->
+                <div class="portfolio-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1497366754035-f200968a6e72?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Food industry trade show booth" class="w-full h-64 object-cover">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="font-bold text-xl mb-2 text-gray-900">FoodPro West</div>
+                        <p class="text-gray-600 text-base">Vibrant, appetizing design for organic food brand in Los Angeles.</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 4 -->
+                <div class="portfolio-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1531545514256-b1400bc00f36?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Automotive trade show booth" class="w-full h-64 object-cover">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="font-bold text-xl mb-2 text-gray-900">AutoInnovate</div>
+                        <p class="text-gray-600 text-base">Sleek, modern design for electric vehicle startup in Detroit.</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 5 -->
+                <div class="portfolio-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1527525443983-6e60c75fff46?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1406&q=80" alt="Fashion trade show booth" class="w-full h-64 object-cover">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="font-bold text-xl mb-2 text-gray-900">Fashion Week NYC</div>
+                        <p class="text-gray-600 text-base">Elegant, minimalist design for luxury fashion brand in New York.</p>
+                    </div>
+                </div>
+                
+                <!-- Portfolio Item 6 -->
+                <div class="portfolio-item rounded-xl overflow-hidden shadow-lg">
+                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="General trade show booth" class="w-full h-64 object-cover">
+                    <div class="px-6 py-4 bg-white">
+                        <div class="font-bold text-xl mb-2 text-gray-900">Global Business Expo</div>
+                        <p class="text-gray-600 text-base">Versatile design for consulting firm at multiple trade shows.</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12">
+                <a href="#contact" class="inline-block bg-indigo-600 hover:bg-indigo-700 text-white font-semibold px-8 py-3 rounded-lg transition duration-300">Request Custom Design</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="py-20 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Our <span class="text-indigo-600">Proven</span> Process</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">From concept to installation, we guide you through every step to ensure your booth makes an impact.</p>
+            </div>
+            
+            <div class="relative">
+                <!-- Timeline line -->
+                <div class="hidden md:block absolute left-1/2 h-full w-1 bg-indigo-200 transform -translate-x-1/2"></div>
+                
+                <!-- Process steps -->
+                <div class="space-y-12 md:space-y-0">
+                    <!-- Step 1 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 mb-8 md:mb-0 md:text-right">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Discovery & Consultation</h3>
+                            <p class="text-gray-600">We start by understanding your brand, goals, and trade show objectives through detailed consultations.</p>
+                        </div>
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-600 flex items-center justify-center text-white text-xl font-bold mx-auto md:mx-0">1</div>
+                        <div class="flex-1 md:pl-12 mt-8 md:mt-0 md:text-left">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-comments text-3xl text-indigo-600 mb-4"></i>
+                                <h4 class="font-semibold text-gray-900 mb-2">What We Need</h4>
+                                <p class="text-gray-600 text-sm">Brand guidelines, booth dimensions, show details, and your vision for the space.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 2 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 mb-8 md:mb-0 md:text-right order-2 md:order-1">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-pencil-ruler text-3xl text-indigo-600 mb-4"></i>
+                                <h4 class="font-semibold text-gray-900 mb-2">What We Deliver</h4>
+                                <p class="text-gray-600 text-sm">3D renderings and multiple design concepts tailored to your specifications.</p>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-600 flex items-center justify-center text-white text-xl font-bold mx-auto md:mx-0 order-1 md:order-2">2</div>
+                        <div class="flex-1 md:pl-12 mt-8 md:mt-0 md:text-left order-3">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Concept Development</h3>
+                            <p class="text-gray-600">Our design team creates multiple concepts that align with your brand and trade show goals.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 3 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 mb-8 md:mb-0 md:text-right">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Refinement & Approval</h3>
+                            <p class="text-gray-600">We refine the selected concept based on your feedback until it's perfect.</p>
+                        </div>
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-600 flex items-center justify-center text-white text-xl font-bold mx-auto md:mx-0">3</div>
+                        <div class="flex-1 md:pl-12 mt-8 md:mt-0 md:text-left">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-check-double text-3xl text-indigo-600 mb-4"></i>
+                                <h4 class="font-semibold text-gray-900 mb-2">Final Steps</h4>
+                                <p class="text-gray-600 text-sm">Material selection, color proofing, and final sign-off before production.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 4 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 mb-8 md:mb-0 md:text-right order-2 md:order-1">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-truck-loading text-3xl text-indigo-600 mb-4"></i>
+                                <h4 class="font-semibold text-gray-900 mb-2">Delivery Options</h4>
+                                <p class="text-gray-600 text-sm">Direct shipping to venue or our warehouse with optional installation services.</p>
+                            </div>
+                        </div>
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-600 flex items-center justify-center text-white text-xl font-bold mx-auto md:mx-0 order-1 md:order-2">4</div>
+                        <div class="flex-1 md:pl-12 mt-8 md:mt-0 md:text-left order-3">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Production & Delivery</h3>
+                            <p class="text-gray-600">We manufacture your graphics with premium materials and deliver on time.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Step 5 -->
+                    <div class="relative flex flex-col md:flex-row items-center">
+                        <div class="flex-1 md:pr-12 mb-8 md:mb-0 md:text-right">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-3">Showtime Support</h3>
+                            <p class="text-gray-600">Our team is available for on-site installation and any last-minute needs.</p>
+                        </div>
+                        <div class="flex-shrink-0 w-16 h-16 rounded-full bg-indigo-600 flex items-center justify-center text-white text-xl font-bold mx-auto md:mx-0">5</div>
+                        <div class="flex-1 md:pl-12 mt-8 md:mt-0 md:text-left">
+                            <div class="bg-white p-6 rounded-lg shadow-md">
+                                <i class="fas fa-hands-helping text-3xl text-indigo-600 mb-4"></i>
+                                <h4 class="font-semibold text-gray-900 mb-2">Peace of Mind</h4>
+                                <p class="text-gray-600 text-sm">Dedicated support throughout the event to ensure everything runs smoothly.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">What Our <span class="text-indigo-600">Clients</span> Say</h2>
+                <p class="text-xl text-gray-600 max-w-3xl mx-auto">Don't just take our word for it - hear from companies that have transformed their trade show presence with our graphics.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-gray-600 text-sm">Marketing Director, TechSolutions</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"Sh Graphics transformed our booth from ordinary to extraordinary. The custom 3D signage they created became the talk of CES. We generated three times more leads than previous years!"</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">Michael Chen</h4>
+                            <p class="text-gray-600 text-sm">CEO, OrganicBites</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"The vibrant, appetizing graphics Sh Graphics created for our food booth at Natural Products Expo West helped us stand out in a sea of competitors. Our sales team couldn't keep up with all the interest!"</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-4">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                        <div>
+                            <h4 class="font-bold text-gray-900">David Rodriguez</h4>
+                            <p class="text-gray-600 text-sm">VP Sales, AutoFuture</p>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-6">"From initial concept to on-site installation, Sh Graphics made the entire process seamless. Their innovative lighting solution for our EV display at the Detroit Auto Show was a game-changer for visibility."</p>
+                    <div class="flex text-yellow-400">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 hero-gradient text-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Make Your Booth <span class="text-indigo-200">Unforgettable</span>?</h2>
+            <p class="text-xl mb-8 max-w-3xl mx-auto">Contact us today to discuss your trade show graphics needs. Our team is ready to bring your vision to life.</p>
+            <a href="#contact" class="inline-block bg-white text-indigo-800 hover:bg-indigo-100 px-8 py-3 rounded-lg font-semibold text-lg transition duration-300">Get Started Now</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-6">Get In <span class="text-indigo-600">Touch</span></h2>
+                    <p class="text-gray-600 mb-8 text-lg">Have questions about your next trade show booth? Fill out the form and our team will get back to you within 24 hours.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Our Headquarters</h4>
+                                <p class="text-gray-600">123 Trade Center Blvd, Suite 450<br>Chicago, IL 60601</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Phone</h4>
+                                <p class="text-gray-600">(312) 555-7890<br>Mon-Fri, 9am-5pm CST</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 h-10 w-10 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600 mr-4">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-gray-900">Email</h4>
+                                <p class="text-gray-600">info@shgraphics.com<br>support@shgraphics.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <form class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                            <div>
+                                <label for="first-name" class="block text-sm font-medium text-gray-700 mb-1">First Name</label>
+                                <input type="text" id="first-name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                            <div>
+                                <label for="last-name" class="block text-sm font-medium text-gray-700 mb-1">Last Name</label>
+                                <input type="text" id="last-name" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                            </div>
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-sm font-medium text-gray-700 mb-1">Email Address</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="phone" class="block text-sm font-medium text-gray-700 mb-1">Phone Number</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="show" class="block text-sm font-medium text-gray-700 mb-1">Trade Show/Event</label>
+                            <input type="text" id="show" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500">
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-sm font-medium text-gray-700 mb-1">Project Details</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:ring-2 focus:ring-indigo-500 focus:border-indigo-500"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-lg transition duration-300">Request Consultation</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <span class="text-3xl font-bold text-indigo-400">Sh</span>
+                        <span class="text-3xl font-bold text-white">Graphics</span>
+                    </div>
+                    <p class="text-gray-400 mb-4">Professional, innovative booth graphics that make your brand stand out at trade shows across the USA.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Custom Booth Graphics</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Banner Stands</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">3D Signage</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Booth Design</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Installation Services</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white">Trade Show Tips</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Booth Design Guide</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Material Options</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">FAQ</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white">Blog</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h3 class="text-lg font-semibold mb-4">Newsletter</h3>
+                    <p class="text-gray-400 mb-4">Subscribe to get trade show tips and special offers.</p>
+                    <form class="flex">
+                        <input type="email" placeholder="Your email" class="px-4 py-2 rounded-l-lg focus:outline-none text-gray-900 w-full">
+                        <button type="submit" class="bg-indigo-600 hover:bg-indigo-700 px-4 py-2 rounded-r-lg"><i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 text-sm mb-4 md:mb-0">© 2023 Sh Graphics. All rights reserved.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Terms of Service</a>
+                    <a href="#" class="text-gray-400 hover:text-white text-sm">Sitemap</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            document.getElementById('mobile-menu').classList.toggle('hidden');
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                
+                // Close mobile menu if open
+                document.getElementById('mobile-menu').classList.add('hidden');
+            });
+        });
+
+        // Form submission (placeholder)
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you for your inquiry! Our team will contact you shortly.');
+            this.reset();
+        });
+    </script>
+</body>
+</html>
